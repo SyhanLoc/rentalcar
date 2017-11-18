@@ -7,27 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Business Name</h1>
-    <p class id="busName"></p>
     
-    <h3>Economy Cars</h3>
-    <p class id="ecoCars"></p>
-    
-    <h3>Economy Cars Available</h3>
-    <p class id="ecoAvail"</p>
+            <h1>Business Name</h1>
+            <p class id="busName"></p>
+            
+            
+            <h3>What is your name?</h3>
+            <input type="text" placeholder="Name" id="yourName">
+            
+            <h3>Economy Cars</h3>
+                
+                <select id="ecoCars2" onchange = myFunction()>
+                    <option value="Chevrolet Cruze $51">Chevrolet Cruze  $51/a day
+                    <option value="Ford Fiesta $51">Ford Fiesta  $51/a day
+                    <option value="Hyundai Elantra $51">Hyundai Elantra  $51/a day
+                    <option value="Toyota Corolla $51">Toyota Corolla  $51/a day
+                </select>
+            <p class id="ecoCars"></p>
+            
+            <h3>Economy Cars Available</h3>
+            <p class id="ecoAvail"</p>
+                
+            <h3>Midsize Cars</h3>
+            <p class id="midCars"></p>
+            <select id="ecoCars2" value="select car" onchange="myFunction()">
+                    <option value="Chevrolet Malibu $61">Chevrolet Malibu  $61/a day
+                    <option value="Ford Fusion $61">Ford Fusion  $61/a day
+                    <option value="Hyundai Sonata $61">Hyundai Sonata  $61/a day
+                    <option value="Toyota Camry $61">Toyota Camry  $61/a day
+                </select>
+            
+            <h3>Midsize Cars Available</h3>
+            <p class id="midAvail"></p>
+           
+                
         
-    <h3>Midsize Cars</h3>
-    <p class id="midCars"></p>
+            <button onClick="update()">Update</button>
+            <button onClick="minusMidsize()">Rent Out 1 Midsize Car</button>
+            <button onClick="minusEconomy()">Rent Out 1 Economy Car</button>
+            <button onClick="resetButton()">Reset form</button>
+            <!--<input type="button" onclick="myFunction()" value="Reset form">-->
     
-    <h3>Midsize Cars Available</h3>
-    <p class id="midAvail"></p>
-   
-        
-
-    <button onClick="update()">Update Availability</button>
-    <button onClick="minusMidsize()">Rent Out 1 Midsize Car</button>
-    <button onClick="minusEconomy()">Rent Out 1 Economy Car</button>
 
     <script src='object.js'></script>
+    <p id="outputName"></p>
+    
 </body>
 </html>
