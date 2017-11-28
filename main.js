@@ -11,7 +11,6 @@ var vehicles = {
                 available: 30
             },
         ],
-        
         name: "Rent My Car"
 }
 // passing variable right here
